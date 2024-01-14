@@ -11,7 +11,7 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ServeStaticModule.forRoot({ // New
-      rootPath: join(__dirname, '../..', 'public/'), // New
+      rootPath: join(__dirname, '..', 'public/'), // New
     }),
     DrizzleModule,
     UsersModule, // New
